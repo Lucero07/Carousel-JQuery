@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Carousel con JS</title>
-  <link rel="stylesheet" href="css\materialize.min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="purple lighten-5">
   <header>
     <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo"><img src="assets/jquery.png" alt=""></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
@@ -19,29 +19,40 @@
     </div>
   </nav>
   </header>
+
   <section class="container">
-    <div class="carousel">
-  		<div data-slide="0" class="carousel-content  responsive-img active">
-  			<img src="assets/flor1.jpg" alt="Imagen 1">
-  		</div>
-  		<div data-slide="1" class="carousel-content  responsive-img">
-  			<img src="assets/flor2.jpg" alt="Imagen 2">
-  		</div>
-  		<div data-slide="2" class="carousel-content  responsive-img">
-  			<img src="assets/flor3.jpg" alt="Imagen 3">
-  		</div>
-  		<div data-slide="3" class="carousel-content responsive-img">
-  			<img src="assets/flor4.jpg" alt="Imagen 4">
-  		</div>
-  	</div>
-  	<div class="controls">
-  		<a href="#" class="previous">&#60;</a>
-  		<button class="waves-effect waves-light btn" type="button" data-target="0" class="control">Flor Exotica 1</button>
-  		<button class="waves-effect waves-light btn" type="button" data-target="1" class="control">Flor Exotica 2</button>
-  		<button class="waves-effect waves-light btn" type="button" data-target="2" class="control">Flor Exotica 3</button>
-  		<button class="waves-effect waves-light btn" type="button" data-target="3" class="control">Flor Exotica 4</button>
-  		<a href="#" class="next">&#62;</a>
-  	</div>
+		<div class="row center-align">
+			<h1>Carrusel con JQuery</h1>
+		</div>
+		<div class="row">
+			<div class="carousel col s6 offset-s3">
+
+	  		<div data-slide="0" class="carousel-content  responsive-img active">
+	  			<img src="assets/flor1.jpg" alt="Imagen 1">
+	  		</div>
+	  		<div data-slide="1" class="carousel-content  responsive-img">
+	  			<img src="assets/flor2.jpg" alt="Imagen 2">
+	  		</div>
+	  		<div data-slide="2" class="carousel-content  responsive-img">
+	  			<img src="assets/flor3.jpg" alt="Imagen 3">
+	  		</div>
+	  		<div data-slide="3" class="carousel-content responsive-img">
+	  			<img src="assets/flor4.jpg" alt="Imagen 4">
+	  		</div>
+	  	</div>
+		</div>
+		<div class="row">
+			<div class="controls col s6 offset-s3 center-align">
+	  		<a href="#" class="previous btn-floating btn-large waves-effect waves-light z-depth-5  red">&#60;</a>
+	  		<button class=" control btn-floating btn-large waves-effect waves-light z-depth-5 cyan accent-2" type="button" data-target="0" class="control">Flor 1</button>
+	  		<button class=" control btn-floating btn-large waves-effect waves-light z-depth-5  light-green accent-3" type="button" data-target="1" class="control">Flor 2</button>
+	  		<button class=" control btn-floating btn-large waves-effect waves-light z-depth-5 deep-orange accent-3" type="button" data-target="2" class="control">Flor 3</button>
+	  		<button class=" control btn-floating btn-large waves-effect waves-light z-depth-5 pink accent-3" type="button" data-target="3" class="control">Flor 4</button>
+	  		<a href="#" class="next btn-floating btn-large waves-effect waves-light z-depth-5 blue">&#62;</a>
+	  	</div>
+		</div>
+
+
   </section>
 
 

@@ -5,3 +5,7 @@
 .carousel-content.active {
 	display: block;
 }
+
+.brand-logo img{
+	width: 10%;
+}
